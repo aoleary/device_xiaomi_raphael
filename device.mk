@@ -518,6 +518,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Remove unwanted GAPPs packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
@@ -526,6 +530,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Shims
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
