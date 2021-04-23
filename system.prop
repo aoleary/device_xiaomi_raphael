@@ -57,6 +57,10 @@ persist.vendor.sensors.enable.mag_filter=true
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
+# WiFi Scan Interval (default = 15s)
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.supplicant_scan_interval=600
+
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
