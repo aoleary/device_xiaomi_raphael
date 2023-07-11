@@ -23,6 +23,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Enable extendrom
+$(call inherit-product, vendor/extendrom/config/common.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     ApertureOverlay \
