@@ -656,6 +656,18 @@
       "Value": "2016000"
     },
     {
+      "PowerHint": "FP_BOOST",
+      "Node": "CPUBigClusterMaxFreq",
+      "Duration": 500,
+      "Value": "2419200"
+    },
+    {
+      "PowerHint": "FP_BOOST",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 500,
+      "Value": "2419200"
+    },
+    {
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "TAminclamp",
       "Duration": 0,
