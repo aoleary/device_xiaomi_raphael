@@ -17,7 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Matrixx
 MATRIXX_BUILD_TYPE := Personal
-MATRIXX_MAINTAINER := NATO66613
+MATRIXX_MAINTAINER := aoleary
 MATRIXX_CHIPSET := SM8150
 MATRIXX_BATTERY := 4000mAh
 MATRIXX_DISPLAY := 1080x2400
