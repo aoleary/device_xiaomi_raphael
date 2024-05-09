@@ -27,6 +27,7 @@ BUILD_GMS_OVERLAYS_AND_PROPS := true
 TARGET_HAS_UDFPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
+TARGET_DISABLE_EPPE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := sigma_raphael
