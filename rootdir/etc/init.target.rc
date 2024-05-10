@@ -83,6 +83,9 @@ on late-init
     chown system system /sys/devices/virtual/thermal/tz-by-name/bcl-virt-monitor/trip_point_0_temp
     chown system system /sys/devices/virtual/thermal/tz-by-name/bcl-virt-monitor/trip_point_0_hyst
 
+    chown system system /sys/class/drm/card0/card0-DSI-1/hbm
+    chmod 0664 /sys/class/drm/card0/card0-DSI-1/hbm
+
 on early-fs
     start vold
 

@@ -21,9 +21,13 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.content.SharedPreferences;
+import android.os.SystemProperties;
+import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.haptic.HapticUtils;
 import org.lineageos.settings.popupcamera.PopupCameraUtils;
+import org.lineageos.settings.utils.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
@@ -35,5 +39,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         HapticUtils.restoreLevel(context);
         PopupCameraUtils.startService(context);
+        FileUtils.enableService(context);
     }
 }
