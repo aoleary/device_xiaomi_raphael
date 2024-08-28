@@ -15,19 +15,21 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Matrixx
-MATRIXX_BUILD_TYPE := Personal
-MATRIXX_MAINTAINER := aoleary
-MATRIXX_CHIPSET := SM8150
-MATRIXX_BATTERY := 4000mAh
-MATRIXX_DISPLAY := 1080x2400
+# SigmaDroid
+SIGMA_BUILD_TYPE := Personal
+SIGMA_MAINTAINER := aoleary
+SIGMA_CHIPSET := SM8150
+SIGMA_BATTERY := 4000mAh
+SIGMA_DISPLAY := 1080x2400
 WITH_GMS := true
+WITH_GAPPS := true
+BUILD_GMS_OVERLAYS_AND_PROPS := true
 TARGET_HAS_UDFPS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_raphael
+PRODUCT_NAME := sigma_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
